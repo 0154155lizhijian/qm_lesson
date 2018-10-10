@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>打地鼠</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>
+        what-a-mole
+        <span class="score">0</span>
+    </h1>
+    <button class="start" onclick="startGame()">Start!</button>
+
+    <div class="game">
+        <div class="hole hole1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mole"></div>
+            </div>
+    </div>
+    
+</body>
+<script>
+        const holes = document.querySelector('.hole');
+        const scoreBoard = document.querySelector('.score')
+        const moles = document.querySelector('.moles')
+        let score=0;
+        let lastHole;//状态 ，上一次是哪个洞，新随机生成一样的话，再随机一次，否则lastHole = 刚生成的随机数
+        let timeUp = false;
+        let isPlaying = false;
+        function startGame(){
+            if (isPlaying) return;
+            isPlaying = ture;
+            scoreBoard.textContent = 0;
+            timeUp = false;
+            score = 0;
+            setTimeout(() => {
+                timeUp = ture;
+                alert('游戏结束');
+            }, 20000);
+        }
+        function peep(){
+
+        }
+        function bonk(){
+            score++;
+            this.parentNode.classList.remove('up');
+            scoreBoard.textContent = score;
+        }
+        moles.forEach(mole => mole.addEventListener("click",bonk)
+            
+        );
+
+    </script>
+</html>
