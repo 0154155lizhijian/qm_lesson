@@ -1,0 +1,7 @@
+.hero imag,.hero video{
+  height: 38.2vh;
+}
+
+.hero white{
+  background: #fff;
+}
