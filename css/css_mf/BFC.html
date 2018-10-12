@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BFC</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        background: #888888;
+        height: 100%;
+        width: 800px;
+    }
+    .left{
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 3px solid #f3143f;
+        background: green;
+        opacity: 0.5;
+    }
+    .right{
+        width: 400px;
+        min-height: 100px;
+        opacity: 0.5;
+        background: gold;
+        border: 3px solid #f3143f;
+        /* float: right; */
+    }
+.BFC{
+    overflow: hidden;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="box BFC">
+        <div class="left"></div>  
+        <!-- 也可以不使用overflow：hidden，加一个<div style="clear:both"></div> 来清除浮动的效果  两种方式效果同等 -->
+        <div class="right"></div>
+    </div>
+</body>
+</html>

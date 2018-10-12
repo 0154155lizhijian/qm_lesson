@@ -31,6 +31,7 @@ console.log(typeof boo);
 console.log(typeof num);
 console.log(typeof und);
 console.log(typeof nul);
+console.log(typeof str);
 console.log(typeof obj);
 
 
