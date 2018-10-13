@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEUI CELL</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">qq</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_vcode">
+        <div class="weui-cell__hd">
+            <label class="weui-label">手机号</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="tel" placeholder="请输入手机号">
+        </div>
+        <div class="weui-cell__ft">
+            <button class="weui-vcode-btn">获取验证码</button>
+        </div>
+    </div>
+    <article class="weui-article">
+        <h1>大标题</h1>
+        <section>
+            <h2 class="title">章标题</h2>
+            <section>
+                <h3>1.1 节标题</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <p>
+                    <img src="./images/pic_article.png" alt="">
+                    <img src="./images/pic_article.png" alt="">
+                </p>
+            </section>
+            <section>
+                <h3>1.2 节标题</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+        </section>
+    </article>
+    <div class="weui-tabbar">
+        <a href="javascript:;" class="weui-tabbar__item">
+            <span style="display: inline-block;position: relative;">
+                <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+            </span>
+            <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <span style="display: inline-block;position: relative;">
+                <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+            </span>
+            <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+
+</body>
+</html>
