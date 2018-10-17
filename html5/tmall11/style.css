@@ -1,0 +1,105 @@
+/* 10rem  所有手机都为宽度 10rem
+1rem = 1/10 宽度 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+.html_content{
+    height: 100%;
+}
+.item-section{
+    background-color: red;
+    position: relative;
+    min-height: 100%;
+
+}
+
+.item-section_header img{
+    width: 10rem;
+}
+
+ul,li{
+    list-style: none;
+}
+.item-section ui{
+    padding: 0.133333rem;
+}
+.flag{
+    display: table;
+    width: 100%;
+    margin-bottom: 1px;
+    background: #ffffff;
+}
+
+.flag .flag-item{
+    display: table-cell;
+    padding: 0.16rem 0;
+    vertical-align: top;
+}
+.flag .flag-item.figure{
+    width: 2.346667rem;
+    height: 2.346667rem;
+}
+.flag .flag-item.figure img{
+    max-width: 100%;
+}
+.flag .flag-item.figcaption {
+    
+    padding-left: .2rem;
+    padding-right: .2rem;
+    position: relative;
+}
+.flag .flag-title a {
+    
+    color:#000;
+    line-height: 1.25;
+}
+.flag .flag-price {
+    padding: .15rem 0 .2rem;
+}
+.flag .flag-price span{
+    background-color: #f32a4c;
+    color: white;
+    padding: .026667rem .08rem .013333rem;
+    font-size: 11px;
+    margin-right: 0.06667rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.flag .flag-price strong{
+    display: inline-block;
+    color:#f32a4c;
+    font-weight: 700;
+    margin-right:.16rem;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.flag .flag-price small{
+    display: inline-block;
+    font-weight: 700;
+    color:#ee0a3b;
+    background-color: #fffffd;
+    vertical-align: middle;
+}
+.flag .flag-type{
+    color: #ff3600;
+}
+.flag .flag-btn {
+    position: absolute;
+    width: 2.133333rem;
+    height: .64rem;
+    line-height: .64rem;
+    background-color: #ee0a3b;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    bottom: .133333rem;
+    right: .2rem;
+    border-radius: .026667rem;
+}
+
