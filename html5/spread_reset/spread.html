@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" people="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" people="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="people">
+        <p>Wes</p>
+        <p>Kait</p>
+        <p>Randy</p>
+    </div>
+</body>
+<script>
+    //类数组
+    // const people =Array.from(document.querySelectorAll('.people p')) ;
+    // console.log(people);
+    // const names = people.map(str => str.textContext);
+    // console.log(names);
+
+    // const deepFish = {
+    //     pizzaName:'Deep Fish',
+    //     size: 'Medium',
+    //     ingredients:['Marinara','Italian Sausage','Dough','Cheese']
+    // };
+    // // const shopponglist = deepFish.ingredients.concat(['Milk','Flour'])
+    // const shopponglist = ['Milk','Flour',...deepFish.ingredients]
+    // console.log(shopponglist)
+
+    const team = ['麻辣香锅','小虎','明','孙大勇','助教']
+    const [captain,assistant,...players] = team;
+    console.log(captain)
+    console.log(assistant)
+    console.log(players)
+    // const zujiao = team[4]
+    // const jiaolian = team[3]
+    // team.splice(2,2)
+    // player = team
+    
+    console.log(players)
+
+</script>
+</html>
