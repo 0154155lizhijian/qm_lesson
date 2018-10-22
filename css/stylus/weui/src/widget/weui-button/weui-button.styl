@@ -1,0 +1,17 @@
+@import './weui-btn_global'
+@import './weui-btn_primary'
+
+button, input 
+  &.weui-btn
+    width 100%
+    border-width 0
+    outline 0                //手指按下的效果框
+    -webkit-appearance none  //重置表现
+    appearance none
+    &:focus
+      outline: 0
+  &.weui-btn_inline,&.weui-btn_mini             //几种类型的button
+    width auto
+  &.weui-btn_plain-primary,&.weui-btn_plain-default
+    border-width 1px
+    background-color: transparent
