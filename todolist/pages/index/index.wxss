@@ -48,10 +48,78 @@
 .lists {
   height: 0;
   flex: 1;
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
 }
 .nodata{
   padding: 30rpx;
   font-style: italic;
   font-size: 11pt;
   text-align: center;
+}
+.lists .item {
+  border-bottom: 1px dotted #eee;
+  position: relative;
+  overflow: hidden;
+}
+.lists .item .content {
+  padding: 15rpx 30rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: left .3s;
+  width: 694rpx;
+  z-index: 10;
+  background: #fff;
+}
+.lists .item .icon-small {
+  padding: 15rpx 10rpx;
+  flex-shrink: 0;
+}
+.lists .item .title {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.lists .item text.over {
+  text-decoration: line-through;
+  color: #999;
+}
+.addForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+.addForm.hide {
+  display: none;
+}
+.addForm .addForm-div {
+  background: #fff;
+  padding: 30rpx;
+}
+.addForm .addForm-div .weui-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5rpx 20rpx;
+  font-size: 12pt;
+  margin-bottom: 10rpx;
+}
+.addForm .addForm-div .addForm-btn button {
+  margin-right: 15rpx;
+}
+.weui-input {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
+.weui-btn {
+  margin-top: 15px;
 }
