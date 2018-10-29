@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p =new Promise((resolve,reject) =>{      // promise 的两个属性  resolve 成功诺言兑现  reject  失败打印错误信息 
+            // ajax, 定时器， 数据库操作 ，上传下载服务 10s
+            setTimeout(() => {
+                console.log('aaa');
+                // resolve('over')       //resolve 诺言的兑现   没有这个兑现  则 then 无法运行
+                reject('oofail')         //失败以后用catch 来获取错误信息   
+            }, 1000);
+        })
+
+        p.then(data => {
+                console.log(data);
+                console.log('bbb')
+            })
+            .catch(
+                err =>{
+                    console.log(err)
+                }
+            )
+    </script>
+    
+</body>
+</html>

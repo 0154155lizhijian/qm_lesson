@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js 单线程 事件监听 event Loop
+        //setTimeout cb 挂载到Event Loop
+
+       const dsp = async() => {
+           let result = await new Promise((resolve,reject) => {
+               setTimeout(function(){
+                   console.log('aaaa');
+                   resolve('1correct');
+               },1000);
+           });
+           console.log('2'+result);
+           console.log('bbb');
+       }
+       
+       dsp()
+        
+    </script>
+</body>
+</html>
