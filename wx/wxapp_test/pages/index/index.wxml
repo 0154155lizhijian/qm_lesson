@@ -1,0 +1,41 @@
+<view class="search-container">
+  <input class="search" bindinput="searchInputEvent" placeholder='输入要搜索的书名' type="text" />
+  <icon bindtap="searchClickEvent" type="search" size="20" />
+</view>
+<scroll-view scroll-y="true" class="container" style="height:{{scrollHeight}}" bindscrolltolower="scrollLowerEvent">
+  <view class="logo" wx:if="{{!loadingMore && totalRecord == 0 && !isInit}}">
+    <icon type="cancel" color="red" size="40" />
+    <view>
+      <text>没有找到相关图书</text>
+    </view>
+  </view>
+  <view class="logo" wx:if="{{isInit}}">
+    <img src="images/book.png" alt="" />
+    <icon type="search" size="60" />
+    <view class="text">
+      <text>豆瓣图书</text>
+    </view>
+    <text>Designed by Oopsguy</text>
+  </view>
+  <view class="header" wx:if="{{totalRecord > 0 && !isInit}}">
+    <text>图书 {{totalRecord}}本图书</text>
+  </view>
+  <view class="common-list">
+    <block wx:for="{{pageData}}" wx:key="id">
+      <view class="list-item">
+        <view class="index-list-item" wx:if="{{totalRecord>0}}">
+          <view class="cover">
+            <image class="cover-img" src="i{{item.image}}"></image>
+          </view>
+          <view class="content">
+            <view class="title">{{item.title}}</view>
+            <text class="desc">{{item.rating.average == '0.0' ? '无' : item.rating.average}}/<block wx:for="{{item.author}}" wx:for-item="it" wx:key="*this">{{it}}/</block>/{{item.pubdate}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="refresh-footer" wx:if="{{loadingMore}}">
+    <icon type="waiting" size="30" color="red" />
+  </view>
+</scroll-view>
