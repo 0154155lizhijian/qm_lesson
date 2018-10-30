@@ -1,10 +1,11 @@
 <view class="main">
   <view class="category-left">
-    <view class="cate-list {{curIndex === index ?'on': ''}}" wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}"
-     bindtap="switchTab" >{{item.name}}
+    <view class="cate-list {{curIndex === index ?'on': ''}}" wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab" 
+    >{{item.name}}
     </view>
   </view>
-  <scroll-view class="category-right" scroll-y="{{isScroll}}" scroll-with-animation="true" scroll-into-view="{{toView}}">
+  <scroll-view class="category-right" scroll-y="{{isScroll}}" scroll-with-animation="true"
+  scroll-into-view="{{toView}}" bindscroll="switchList">
     <block wx:for="{{detail}}" wx:for-item="item" wx:key="index">
       <view class="cate-box" id="{{item.id}}">
         <view class="cate-banner">
