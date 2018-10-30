@@ -1,0 +1,57 @@
+Page,.container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.search-container{
+    width: 100%;
+    position: fixed;
+    height: 84.338rpx;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: row;
+    z-index: 100;
+    background:white;
+}
+.city{
+    width: 126.506rpx;
+    padding-left: 55rpx;
+    font-size: 15px;
+}
+.city_curr{
+  color: #5F6670 ;
+}
+.search{
+    width: 475.904rpx;
+}
+.call{
+    width: 67.265rpx;
+}
+.user{
+    width: 80.325rpx;
+}
+
+
+.adInfos{
+  width:100%;
+  height: 200px;
+  margin-bottom: 30rpx;
+}
+.adInfos swiper{
+  width:100%;
+  height: 100%;
+}
+.adInfos swiper image{
+  width:100%;
+}
+
+.navigation-bar{
+    width: 100%;
+
+}
+
+
+

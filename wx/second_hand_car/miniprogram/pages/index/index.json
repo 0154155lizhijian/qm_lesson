@@ -1,0 +1,9 @@
+{
+    "usingComponents":{
+        "van-search":"../../vant-weapp/search/index",
+        "icon":"../../images/icon/index",
+        "van-field":"../../vant-weapp/field/index",
+        "van-row":"../../vant-weapp/row/index",
+        "van-col":"../../vant-weapp/col/index"
+    }
+}

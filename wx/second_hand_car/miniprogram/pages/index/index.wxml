@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../../../images/icon/iconfont.css" />
+<view class="container">
+  <view class="search-container">
+    <view class="city">
+      <p class="city_curr">南昌</p>
+      <icon type="xialaxuanze-" fontSize="13px" />
+    </view>
+    <view class="search">
+      <van-search placeholder="搜索您要的车" background="none"></van-search>
+    </view>
+    <view class="call">
+      <icon type="kefu" fontSize="19px" />
+    </view>
+    <view class="user">
+      <icon type="yonghu" fontSize="19px" />
+    </view>
+  </view>
+  <view class="adInfos">
+    <swiper wx:if="{{ads.length}}" autoplay="true" indicator-dots="true" circular="true">
+      <block wx:for="{{ads}}" wx:for-item="ad" wx:key="ad._id">
+        <swiper-item>
+          <image src="{{ad.pic}}" data-id="{{ad._id}}" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="navigation-bar">
+    <swiper indicator-dots="true" circular="true">
+      <swiper-item>
+        <block wx:for="{{navigation_bar_lists}}">
+          <view class="navigation-list">
+            <view class="naviagation">
+              <icon type="{{item.icon_type}}" />
+            </view>
+            <text>{{item.category}}</text>
+          </view>
+        </block>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
