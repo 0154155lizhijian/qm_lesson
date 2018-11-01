@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>appearance</title>
   <style>
-  select {
+  /* select {
     -webkit-appearance: button;
   }
   input {
@@ -17,49 +17,77 @@
   }
   a {
     text-decoration: none;
-  }
-  .btn {
-    display: block;
-    color: white;
-    background-color: green;
-    font-size: 18px;
-    line-height: 2.6666;
-    
-    text-align: center;
+  } */
+ 
+  /* .leftBtn{
+    margin-left: 50px;
     position: relative;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color:red;
+    border-radius:2px; 
+  } */
     /* 1px => .5px?  iphone  */
     /* border: 10px solid #ccc; */
-    width: 100px;
-    border-radius: 15px;
-  }
-  .btn:after {
+  
+  /* .btn:after {
     content: "";
     position: absolute;
-    width: 200%;
-    height: 200%;
-    border-radius: 30px;
-    top: 0;
-    left: 0;
-    border: 1px solid red;
-    transform: scale(0.5);
-    transform-origin: 0 0;
-    box-sizing: border-box;
+    top: 10px;
+    left: 15px;
+    border:1px solid #5f6670;
+    
+    
+  } */
+ .leftBtn:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 15px;
+    border-top:1px solid #5f6675;
+    border-right:1px solid #5F6675; 
+    transform: rotate(45deg)
+  } 
+ 
+  /* .btn:hover {
+    background-color:#f55362;
+  } */
+  .arrowUp:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #656565;
+    border-right: 1px solid #656565;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
-  }
-  .btn:active {
-    background-color: rgba(0, 255, 0, .6);
-  }
+  /* .dom {
+    color: green;
+    border: 1px solid red;
+    background: transparent;
+  } */
 
   
   </style>
 </head>
 <body>
-  <a href="#" class="btn">primary</a>
+  <span class="leftBtn"></span>
+  <!-- <span class="arrowUp"></span> -->
+  <!-- <a href="#" class="btn">primary</a> -->
   <!-- <input type="text" />
   <select name="" id="">
     <option value="0">请选择</option>
     <option value="1">男</option>
     <option value="2">女</option>
   </select> -->
+  <!-- <div><button class="btn"></button></div> -->
+  
+  <!-- <div class="dom"> <span>背景，文字颜色，border透明</span> </div> -->
 </body>
 </html>
