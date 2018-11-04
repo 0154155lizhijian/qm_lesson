@@ -25,17 +25,38 @@
     </swiper>
   </view>
   <view class="navigation-bar">
-    <swiper indicator-dots="true" circular="true">
-      <swiper-item>
-        <block wx:for="{{navigation_bar_lists}}">
-          <view class="navigation-list">
-            <view class="naviagation">
-              <icon type="{{item.icon_type}}" />
-            </view>
-            <text>{{item.category}}</text>
+    <swiper indicator-dots="true" circular="true" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+      <block wx:for="{{navigation_bar_lists}}" wx:for-item="navigates" wx:key="navigates.index">
+        <swiper-item>
+          <view class="navigation-lists">
+            <!-- <block wx:for="{{navigation_bar_lists}}"   > -->
+            <block wx:for="{{navigates}}" wx:for-item="navigate" wx:key="navigate.color">
+              <view class="navigation-list">
+                <view class="naviagation" style="background:{{navigate.color}}">
+                  <icon type="{{navigate.icon_type}}" color="#FFF" fontSize="{{navigate.fontsize}}" />
+                </view>
+                <text>{{navigate.category}}</text>
+              </view>
+            </block>
           </view>
-        </block>
-      </swiper-item>
+        </swiper-item>
+      </block>
     </swiper>
+  </view>
+  <view class="separation"></view>
+  <view class="hot-car">
+    <view class="title">
+      <view class="title-name">
+        热门二手车
+      </view>
+      <view class="title-more">
+        <span class="toAll">查看全部</span>
+      </view>   
+    </view>
+    <view class="select">
+      <view class="select-item">
+        5万以下
+      </view>
+    </view>
   </view>
 </view>
