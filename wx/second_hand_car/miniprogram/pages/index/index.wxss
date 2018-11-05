@@ -51,7 +51,7 @@ Page,.container{
 
 .navigation-bar{
     width: 750rpx;
-    height: 450rpx;
+    height: 420rpx;
 }
 .navigation-bar swiper{
     width: 100%;
@@ -60,81 +60,232 @@ Page,.container{
 .navigation-lists{
     display: flex;
     width: 750rpx;
-    height: 375rpx;
+    height: 350rpx;
     flex-wrap: wrap;
     flex-direction: row;
 
 }
 .navigation-list{
     width: 187.5rpx;
-    height: 175rpx;
-    margin-top: 12.5rpx;
+    height: 150rpx;
+    margin-top: 20rpx;
     display: flex;
     flex-direction:column;
     align-items: center;
     font-size: 27rpx;
 }
 .naviagation{
-    width: 120rpx;
-    height: 120rpx;
+    width: 100rpx;
+    height: 100rpx;
     text-align: center; 
-    line-height: 120rpx;
-    border-radius: 60rpx;
+    line-height: 100rpx;
+    border-radius: 50rpx;
     margin-bottom: 10rpx;
 }
 
 
 .separation{
     width: 750rpx;
-    height: 20rpx;
+    height: 10rpx;
     background: #F5F7FA;
-    margin-top: 20rpx;
+    margin-top: 14rpx;
 }
 .hot-car{
     width: 750rpx;
     display: flex;
     flex-direction: column;
-    margin-bottom: 42rpx;
-    background-color: #5F6670;
-    height: 500rpx;
+    height: 360rpx;
     align-items: center;
 }
 .title {
-    width: 670rpx;
-    background-color: blue;
-    height: 108rpx;
+    width: 672rpx;
+    background-color: #fff;
+    height: 100rpx;
 }
 .title-name{
     float: left;
-    line-height: 108rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    font-weight: 400;
 }
 .title-more{
-    font-size:30rpx;
+    font-size:25rpx;
     line-height: 108rpx;
     float: right;
     color: #8F96A0;
 }
-/* .toAll::after{
+
+.title::before{
     content: "";
-    display: inline-block;
-    position: absolute;
-    width: 10rpx;
-    height: 10rpx;
-    top: 970rpx;
-    left: 710rpx;
-    border-top:1px solid red;
-    border-right:1px solid red; 
-    transform: rotate(45deg)
-} */
+    display: block;
+    position: relative;
+    width: 672rpx;
+    left:0rpx;
+    top: 108rpx;
+    /* background: yellow; */
+    border-top:1px solid #EFF2F6;
+    
+}
 .toAll::after{
     content: "";
     display: inline-block;
     position: relative;
-    width: 15rpx;
-    height: 15rpx;
+    width: 12rpx;
+    height: 12rpx;
     left:5rpx;
+    top:-2rpx;
     /* background: yellow; */
-    border-top:1px solid red;
-    border-right:1px solid red; 
+    border-top:1px solid #8F96A0;
+    border-right:1px solid #8F96A0; 
     transform: rotate(45deg)
+}
+.select{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 672rpx;
+    /* justify-items: center;
+    align-items: center; */
+    
+}
+
+.select-item{
+    /* text-align: center; */
+    width: 168rpx;
+    /* background: darkgoldenrod; */
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    justify-items: center; 
+    align-items: center;
+}
+
+/* .type_icon{
+    width: 60rpx;
+    height: 60rpx;
+} */
+.select-item-item{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: 80rpx;
+    width: 100%;
+}
+.type-icon-img{
+    max-width: 50rpx;
+    max-height: 50rpx; 
+    margin-left: 8rpx;
+    margin-right: 16rpx;
+}
+
+.select-item-font{
+    width: 100%;
+    text-align:left;
+    font-size: 27rpx;
+    line-height: 80rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+.select-item-item-font{
+    width: 100%;
+    text-align: left;
+    font-size: 24rpx;
+    line-height: 80rpx;
+}
+
+.strict-select-shop{
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+    height: 610rpx;
+    align-items: center;
+
+}
+
+.strict-title{
+    width: 672rpx;
+    background-color: #fff;
+    height: 100rpx;
+    
+}
+.strict-title-name{
+    float: left;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    font-weight: 400;
+}
+
+.strict-content{
+    width: 672rpx;
+    background-color: #F5F7FA;
+    height: 510rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.strict-shop-img{
+    max-width: 240rpx;
+    max-height: 160rpx;
+    width: 240rpx;
+    height: 160rpx;
+}
+.strict-car-img{
+    max-width: 186rpx;
+    max-height: 124rpx;
+    width: 186rpx;
+    height: 124rpx;
+}
+
+.strict-shop{
+    height: 160rpx;
+    width: 638rpx;
+    display: flex;
+    margin-top: 42rpx;
+    margin-bottom: 44rpx;
+    margin-left: 50rpx;
+    margin-right: 50rpx; 
+    
+}
+.stricr-shop-info{
+    margin-left: 35rpx;
+    font-size: 19rpx;
+    margin-right: 40rpx;
+    color: #A2A9B1;
+    
+}
+.stricr-shop-info h2{
+    font-size: 30rpx;
+    color: #0f0f0f;
+}
+.strict-car-lists{
+    height: 224rpx;
+    width: 638rpx;
+    display: flex;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+   
+    font-size: 25rpx;
+    text-align: center;
+}
+.strict-car-list{
+    height: 224rpx;
+    width: 186rpx;
+    margin-right: 40rpx;
+    background-color: #fff;
+}
+
+.strict-car-info{
+    font-size: 25rpx;
+    text-align: center;
+    height: 100rpx;
+    vertical-align: middle;
+    line-height: 2;
+  
+}
+
+.price-font{
+    color: #FF7147;
 }
