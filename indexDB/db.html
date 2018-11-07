@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>indexDB</title>
+</head>
+<body>
+    <script>
+        const request=window.indexedDB.open('kft',1);
+        request.onerror=function(event){
+            //不支持api时报错，数据存储超过硬盘容量
+            console.log('数据库打开报错');
+        }    
+        var db;
+        request.onsuccess=function(){
+            db=request.result;
+            console.log('数据库打开成功',db);
+            // add();
+             read();
+        }
+        request.onupgradeneeded=function(event){
+            console.log('upgrade');
+            db=event.target.result;
+            let objectStore;//table collection
+            if(!db.objectStoreNames.contains('person')){
+                objectStore = db.createObjectStore('person', { keyPath: 'id' });
+                objectStore.createIndex('name','name',{unique:false});
+                objectStore.createIndex('email','email',{unique:true});
+            }
+        }
+        function add() {
+            const request= db.transaction(['person'], 'readwrite').objectStore('person').add({id:1,name:'jack',age:24,email:'9326948419@qq.com'});
+            request.onsuccess=function(){
+                console.log('数据写入成功');
+            }
+            request.onerror=function(){
+                console.log('数据写入失败');
+            }
+        }
+        function read(){
+            var transaction=db.transaction(['person']);
+            var objectStore=transaction.objectStore('person');
+            var request=objectStore.get(1);
+            request.onerror=function(){
+                console.log('事务失败');
+            }
+            request.onsuccess=function(){
+                if(request.result){
+                    console.log('Name:'+request.result.name);
+                    console.log('Age:'+request.result.add);
+                    console.log('Email:'+request.result.email);
+                }else{
+                    console.log('未获得数据');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
