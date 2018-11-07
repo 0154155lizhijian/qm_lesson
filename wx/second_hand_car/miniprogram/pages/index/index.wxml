@@ -89,7 +89,7 @@
           <view class="strict-car-info">
             
               <text >大众途安  
-              <text class="price-font">9.65万</text></text>
+              <text class="red-font">9.65万</text></text>
             
            
           </view>
@@ -100,7 +100,7 @@
           </view>
           <view class="strict-car-info">
             <text>起亚福瑞迪
-            <text class="price-font">3.52万</text></text>
+            <text class="red-font">3.52万</text></text>
           </view>
         </view>
         <view class="strict-car-list">
@@ -109,11 +109,103 @@
           </view>
           <view class="strict-car-info">
             <text>大众凌度
-            <text class="price-font">10.45万</text></text>
+            <text class="red-font">10.45万</text></text>
           </view>
         </view>
       </view>
     </view>
   </view>
   <view class="separation"></view>
+  <view class='strict-select-car'>
+    <view class='strict-select-car-title'>
+      <view class='strict-select-car-title-name'><image src="../../images/label.png" /></view>
+      <view class='strict-select-car-title-more'>详情</view>
+    </view>
+    <view class='strict-select-car-content'>
+      <view class='strict-select-car-left' style="background-image:url(../../images/bg1.png);background-size:100% 100%">
+        <div class="strict-select-car-left-choose"> <text class="black-font">选你所爱</text> </div>
+        <div class="strict-select-car-left-chooseInfo"><text class="red-font">3年内准新车</text></div> 
+      </view>
+      <view class='strict-select-car-right'>
+        <view class='strict-select-car-right-one' style="background-image:url(../../images/bg2.png);background-size:100% 100%"> 
+          <div class="strict-select-car-right-box">
+            <div class="strict-select-car-right-choose"> <text class="black-font">入门首选</text> </div>
+            <div class="strict-select-car-right-chooseInfo"><text class="red-font">5-7万必看</text></div>
+          </div>
+        </view>
+        <view class='strict-select-car-right-two' style="background-image:url(../../images/bg3.png);background-size:100% 100%">
+          <div class="strict-select-car-right-box">
+            <div class="strict-select-car-right-choose"> <text class="black-font">车美价优</text> </div>
+            <div class="strict-select-car-right-chooseInfo"><text class="red-font">体验手动乐趣</text></div> 
+          </div>    
+        </view> 
+      </view>
+    </view>
+  </view>
+  <view class="separation"></view>
+  <view class="discovery">
+    <view class="dicovery-title">
+      <view class="dicovery-title-name">发现</view>
+      <view class="discovery-title-more">更多</view>
+    </view>
+    <view class="discovery-content">
+      <ul>
+        <li>  
+          <div class="discovery-content-items"> 
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                  </div>
+                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
+              </div> 
+            <div class="discovery-content-right">
+              <div class="discovery-content-right-img">
+                <image src="../../images/discovery1.jpg" ></image>
+              </div>
+            </div>
+            </div>
+            <div class="discovery-content-item-separation"></div>
+          </div>  
+        </li>
+        <li>  
+          <div class="discovery-content-items"> 
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                  </div>
+                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
+              </div> 
+            <div class="discovery-content-right">
+              <div class="discovery-content-right-img">
+                <image src="../../images/discovery1.jpg" ></image>
+              </div>
+            </div>
+            </div>
+            <div class="discovery-content-item-separation"></div>
+          </div>  
+        </li>
+        <li>  
+          <div class="discovery-content-items"> 
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                  </div>
+                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
+              </div> 
+            <div class="discovery-content-right">
+              <div class="discovery-content-right-img">
+                <image src="../../images/discovery1.jpg" ></image>
+              </div>
+            </div>
+            </div>
+            <div class="discovery-content-item-separation"></div>
+          </div>  
+        </li>
+      </ul>
+    </view>
+  </view>
+  
 </view>
