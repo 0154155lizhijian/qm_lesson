@@ -74,10 +74,8 @@
           <image src="../../images/zhixuan1.JPG" class="strict-shop-img" />
         </view>
         <view class="stricr-shop-info">
-          <h2>瓜子二手车严选直卖店(南昌华南城店)</h2>
-          <text>
-
-            车源数量： 210辆
+          <text class="h2">瓜子二手车严选直卖店(南昌华南城店)</text>
+          <text>\n\n车源数量： 210辆
             看车地址： 红谷滩新区</text>
         </view>
       </view>
@@ -87,11 +85,8 @@
             <image src="../../images/zhixuan2.JPG" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
-            
-              <text >大众途安  
-              <text class="red-font">9.65万</text></text>
-            
-           
+            <text>大众途安</text>
+            <text class="red-font">\n9.65万</text>
           </view>
         </view>
         <view class="strict-car-list">
@@ -99,8 +94,8 @@
             <image src="../../images/zhixuan3.JPG" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
-            <text>起亚福瑞迪
-            <text class="red-font">3.52万</text></text>
+            <text> 起亚福瑞迪</text>
+            <text class="red-font">\n3.52万</text>
           </view>
         </view>
         <view class="strict-car-list">
@@ -108,8 +103,8 @@
             <image src="../../images/zhixuan4.JPG" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
-            <text>大众凌度
-            <text class="red-font">10.45万</text></text>
+            <text>大众凌度</text>
+            <text class="red-font">\n10.45万</text>
           </view>
         </view>
       </view>
@@ -118,27 +113,41 @@
   <view class="separation"></view>
   <view class='strict-select-car'>
     <view class='strict-select-car-title'>
-      <view class='strict-select-car-title-name'><image src="../../images/label.png" /></view>
+      <view class='strict-select-car-title-name'>
+        <image src="../../images/label.png" />
+      </view>
       <view class='strict-select-car-title-more'>详情</view>
     </view>
     <view class='strict-select-car-content'>
       <view class='strict-select-car-left' style="background-image:url(../../images/bg1.png);background-size:100% 100%">
-        <div class="strict-select-car-left-choose"> <text class="black-font">选你所爱</text> </div>
-        <div class="strict-select-car-left-chooseInfo"><text class="red-font">3年内准新车</text></div> 
+        <div class="strict-select-car-left-choose">
+          <text class="black-font">选你所爱</text>
+        </div>
+        <div class="strict-select-car-left-chooseInfo">
+          <text class="red-font">3年内准新车</text>
+        </div>
       </view>
       <view class='strict-select-car-right'>
-        <view class='strict-select-car-right-one' style="background-image:url(../../images/bg2.png);background-size:100% 100%"> 
+        <view class='strict-select-car-right-one' style="background-image:url(../../images/bg2.png);background-size:100% 100%">
           <div class="strict-select-car-right-box">
-            <div class="strict-select-car-right-choose"> <text class="black-font">入门首选</text> </div>
-            <div class="strict-select-car-right-chooseInfo"><text class="red-font">5-7万必看</text></div>
+            <div class="strict-select-car-right-choose">
+              <text class="black-font">入门首选</text>
+            </div>
+            <div class="strict-select-car-right-chooseInfo">
+              <text class="red-font">5-7万必看</text>
+            </div>
           </div>
         </view>
         <view class='strict-select-car-right-two' style="background-image:url(../../images/bg3.png);background-size:100% 100%">
           <div class="strict-select-car-right-box">
-            <div class="strict-select-car-right-choose"> <text class="black-font">车美价优</text> </div>
-            <div class="strict-select-car-right-chooseInfo"><text class="red-font">体验手动乐趣</text></div> 
-          </div>    
-        </view> 
+            <div class="strict-select-car-right-choose">
+              <text class="black-font">车美价优</text>
+            </div>
+            <div class="strict-select-car-right-chooseInfo">
+              <text class="red-font">体验手动乐趣</text>
+            </div>
+          </div>
+        </view>
       </view>
     </view>
   </view>
@@ -149,61 +158,97 @@
       <view class="discovery-title-more">更多</view>
     </view>
     <view class="discovery-content">
+      <ul class="discovery-content-items">
+        <li>
+          <div class="discovery-content-contain">
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                </div>
+                <div block class="discovery-content-tag">
+                  <div class="discovery-content-tag-text">用车</div>
+                </div>
+              </div>
+              <div class="discovery-content-right">
+                <div class="discovery-content-right-img">
+                  <image src="../../images/discovery1.jpg"></image>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </li>
+        <li>
+          <div class="discovery-content-contain">
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                </div>
+                <div block class="discovery-content-tag">
+                  <div class="discovery-content-tag-text">用车</div>
+                </div>
+              </div>
+              <div class="discovery-content-right">
+                <div class="discovery-content-right-img">
+                  <image src="../../images/discovery1.jpg"></image>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="discovery-content-contain">
+            <div class="discovery-content-item">
+              <div class="discovery-content-left">
+                <div class="discovery-content-info">
+                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
+                </div>
+                <div block class="discovery-content-tag">
+                  <div class="discovery-content-tag-text">用车</div>
+                </div>
+              </div>
+              <div class="discovery-content-right">
+                <div class="discovery-content-right-img">
+                  <image src="../../images/discovery1.jpg"></image>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </view>
+  </view>
+  <view class="uLike">
+    <view class="uLike-titleBar">
+      <view class="{{status === '1'?'active':''}}" data-status="1" bindtap="showStatus" id="ulike">猜你喜欢</view>
+      <view class="{{status === '2'?'active':''}}" data-status="2" bindtap="showStatus" id="strict">严选车</view>
+      <view class="{{status === '3'?'active':''}}" data-status="3" bindtap="showStatus" id="worthwhile">超值车源</view>
+    </view>
+    <view class="uLike-car-content">
       <ul>
-        <li>  
-          <div class="discovery-content-items"> 
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                  </div>
-                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
-              </div> 
-            <div class="discovery-content-right">
-              <div class="discovery-content-right-img">
-                <image src="../../images/discovery1.jpg" ></image>
-              </div>
-            </div>
-            </div>
-            <div class="discovery-content-item-separation"></div>
-          </div>  
+        <li>
+          <view class="uLike-item-content">
+            <view class="uLike-item">
+              <view class="uLike-item-left">
+                  <image src="../../images/like.jpg" />
+              </view>
+              <view class="uLike-item-right">
+                <view class="uLike-item-info">
+                  <text id='info'>雪铁龙 世嘉 2013款 三厢\n1.6L 手动品尚型
+                  </text>
+                  <text id="old">2014年/3.9万公里\n</text>
+                  <text id="price">4.06万</text> <text id="old">新车价 </text> <text id='newPrice'>11.70万</text>
+                </view>
+              </view>
+            </view>
+          </view>
         </li>
-        <li>  
-          <div class="discovery-content-items"> 
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                  </div>
-                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
-              </div> 
-            <div class="discovery-content-right">
-              <div class="discovery-content-right-img">
-                <image src="../../images/discovery1.jpg" ></image>
-              </div>
-            </div>
-            </div>
-            <div class="discovery-content-item-separation"></div>
-          </div>  
-        </li>
-        <li>  
-          <div class="discovery-content-items"> 
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                  </div>
-                <div block class="discovery-content-tag"><div class="discovery-content-tag-text">用车</div></div>
-              </div> 
-            <div class="discovery-content-right">
-              <div class="discovery-content-right-img">
-                <image src="../../images/discovery1.jpg" ></image>
-              </div>
-            </div>
-            </div>
-            <div class="discovery-content-item-separation"></div>
-          </div>  
-        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </view>
   </view>

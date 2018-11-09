@@ -5,6 +5,7 @@ const db = wx.cloud.database();
 
 Page({
   data: {
+    status:'',
     ads: [],
     beforeColor: "#CBD1D9",//指示点颜色
     afterColor: "#22A038",//当前选中的指示点颜色
@@ -115,7 +116,7 @@ Page({
           fontsize:'40rpx'
         }
       ]
-    ]
+    ],
   },
   onLoad: function () {
     db.collection("ads").get({
@@ -126,7 +127,11 @@ Page({
       }
     })
   },
-
-
+  showStatus:function(e){
+    var st = e.currentTarget.dataset.status
+    this.setData({
+      status:st,
+    })
+  },
 })
 
