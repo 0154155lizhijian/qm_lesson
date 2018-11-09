@@ -26,20 +26,19 @@ const loadNotes = (fn,page=1,limit=10) => {
   notes
     .count()
     .then(res =>{
+      // console.log(res)
       total = res.total
       return notes
         .limit(limit)
         .skip(skip)
         .get()
     })
-    .then(res => {
+    .then( (res) => {
       fn({
         total,
-        data:res.data
-   
+        data:res.data,
       })
     })
-  // fn(data);
 };
 module.exports = {
   formatTime: formatTime,
