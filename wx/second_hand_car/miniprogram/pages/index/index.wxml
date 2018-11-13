@@ -16,7 +16,7 @@
     </view>
   </view>
   <view class="adInfos">
-    <swiper wx:if="{{ads.length}}" autoplay="true" indicator-dots="true" circular="true">
+    <swiper wx:if="{{ads.length}}" autoplay="true" indicator-dots="true" circular="true" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
       <block wx:for="{{ads}}" wx:for-item="ad" wx:key="ad._id">
         <swiper-item>
           <image src="{{ad.pic}}" data-id="{{ad._id}}" mode="aspectFill" />
@@ -71,7 +71,7 @@
     <view class="strict-content">
       <view class="strict-shop">
         <view class="strict-shop-img">
-          <image src="../../images/zhixuan1.JPG" class="strict-shop-img" />
+          <image src="../../images/shop.jpg" class="strict-shop-img" />
         </view>
         <view class="stricr-shop-info">
           <text class="h2">瓜子二手车严选直卖店(南昌华南城店)</text>
@@ -82,7 +82,7 @@
       <view class="strict-car-lists">
         <view class="strict-car-list">
           <view class="strict-car-img">
-            <image src="../../images/zhixuan2.JPG" class="strict-car-img" />
+            <image src="../../images/zhixuan_one.jpg" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
             <text>大众途安</text>
@@ -91,7 +91,7 @@
         </view>
         <view class="strict-car-list">
           <view class="strict-car-img">
-            <image src="../../images/zhixuan3.JPG" class="strict-car-img" />
+            <image src="../../images/zhixuan_two.jpg" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
             <text> 起亚福瑞迪</text>
@@ -100,7 +100,7 @@
         </view>
         <view class="strict-car-list">
           <view class="strict-car-img">
-            <image src="../../images/zhixuan4.JPG" class="strict-car-img" />
+            <image src="../../images/zhixuan_three.jpg" class="strict-car-img" />
           </view>
           <view class="strict-car-info">
             <text>大众凌度</text>
@@ -119,7 +119,7 @@
       <view class='strict-select-car-title-more'>详情</view>
     </view>
     <view class='strict-select-car-content'>
-      <view class='strict-select-car-left' style="background-image:url(../../images/bg1.png);background-size:100% 100%">
+      <view class='strict-select-car-left' style="background-image:url(../../images/one.jpg);background-size:100% 100%">
         <div class="strict-select-car-left-choose">
           <text class="black-font">选你所爱</text>
         </div>
@@ -128,7 +128,7 @@
         </div>
       </view>
       <view class='strict-select-car-right'>
-        <view class='strict-select-car-right-one' style="background-image:url(../../images/bg2.png);background-size:100% 100%">
+        <view class='strict-select-car-right-one' style="background-image:url(../../images/two.jpg);background-size:100% 100%">
           <div class="strict-select-car-right-box">
             <div class="strict-select-car-right-choose">
               <text class="black-font">入门首选</text>
@@ -138,7 +138,7 @@
             </div>
           </div>
         </view>
-        <view class='strict-select-car-right-two' style="background-image:url(../../images/bg3.png);background-size:100% 100%">
+        <view class='strict-select-car-right-two' style="background-image:url(../../images/three.jpg);background-size:100% 100%">
           <div class="strict-select-car-right-box">
             <div class="strict-select-car-right-choose">
               <text class="black-font">车美价优</text>
@@ -172,7 +172,7 @@
               </div>
               <div class="discovery-content-right">
                 <div class="discovery-content-right-img">
-                  <image src="../../images/discovery1.jpg"></image>
+                  <image src="../../images/discovery_one.jpg"></image>
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@
               </div>
               <div class="discovery-content-right">
                 <div class="discovery-content-right-img">
-                  <image src="../../images/discovery1.jpg"></image>
+                  <image src="../../images/discovery_one.jpg"></image>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
               </div>
               <div class="discovery-content-right">
                 <div class="discovery-content-right-img">
-                  <image src="../../images/discovery1.jpg"></image>
+                  <image src="../../images/discovery_one.jpg"></image>
                 </div>
               </div>
             </div>

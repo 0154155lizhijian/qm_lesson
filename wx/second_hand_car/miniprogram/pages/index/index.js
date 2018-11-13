@@ -5,7 +5,7 @@ const db = wx.cloud.database();
 
 Page({
   data: {
-    status:'',
+    status:1,
     ads: [],
     beforeColor: "#CBD1D9",//指示点颜色
     afterColor: "#22A038",//当前选中的指示点颜色
