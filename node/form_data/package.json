@@ -1,0 +1,13 @@
+{
+  "name": "form_data",
+  "version": "0.1.0",
+  "description": "1. Backend \r     web Server 硬件服务器 | php java 等语言 后端服务器应用程序\r     提供http访问 http：//127.0.0.1:3000/index?a=1&b=2\r     protocol http://\r     127.0.0.1  IP => domain baidu.com\r     3000 端口 伺服\r     /path\r     ?querystring\r 2. 类事件的概念\r     http.createServer((req,res)=>{",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app"
+  },
+  "keywords": [],
+  "author": "0154155lizhijian <1367688918@qq.com> (https://github.com/0154155lizhijian)",
+  "license": "MIT"
+}
