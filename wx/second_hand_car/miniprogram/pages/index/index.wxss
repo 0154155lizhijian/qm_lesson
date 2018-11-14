@@ -622,3 +622,68 @@ img{
     color:#8F96A0;
     text-decoration: line-through;
 }
+
+
+/* 规则提示层  */
+.isRuleShow{
+    display: block;
+}
+.isRuleHide{
+    display: none;
+}
+.ruleZhezhao{
+    height: 85%;
+    width: 94%;
+    margin-top: 15%;
+    margin-left: 3%;
+    position: fixed;
+    background-color:#F5F7FA;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.ruleZhezhao::-webkit-scrollbar {
+    display: none;
+  }
+
+.cityContent{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.nowInCityText{
+    height: 113rpx;
+    color: #8F96A0;
+    font-size: 25rpx;
+    text-align: left;
+    margin-left: 31rpx;
+    line-height: 113rpx;
+}
+.inCityContent{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inCity{
+    height: 95rpx;
+    line-height: 95rpx;
+    width: 25%;
+    text-align: center;
+    color: #303741;
+}
+.cityTitle{
+    height: 54rpx;
+    color: #8F96A0;
+    font-size: 25rpx;
+    text-align: left;
+    margin-left: 31rpx;
+    line-height: 54rpx;
+}
+
+
+/*  end  */
+

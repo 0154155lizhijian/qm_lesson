@@ -5,6 +5,9 @@ const db = wx.cloud.database();
 
 Page({
   data: {
+    isRuleTrue: true,
+    open:false,
+    open2:false,
     status:1,
     ads: [],
     beforeColor: "#CBD1D9",//指示点颜色
@@ -118,6 +121,7 @@ Page({
       ]
     ],
   },
+  
   onLoad: function () {
     db.collection("ads").get({
       success: res => {
@@ -133,5 +137,21 @@ Page({
       status:st,
     })
   },
-})
 
+  //打开规则提示
+  showRule: function () {
+    this.setData({
+        isRuleTrue: true
+    })
+},
+//关闭规则提示
+hideRule: function () {
+  this.setData({
+      isRuleTrue: false
+  })
+},
+
+ 
+
+})
+ 
