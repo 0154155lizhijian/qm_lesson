@@ -1,13 +1,16 @@
 wx.cloud.init({
 
 })
+let City = require('../../utils/allcity.js');
+// import getcity from './getcity'
 const db = wx.cloud.database();
 
 Page({
   data: {
-    isRuleTrue: true,
-    open:false,
-    open2:false,
+    city:City,
+    // inCity:'',
+    myCity:'南昌',
+    isCityTrue: false,
     status:1,
     ads: [],
     beforeColor: "#CBD1D9",//指示点颜色
@@ -123,6 +126,7 @@ Page({
   },
   
   onLoad: function () {
+
     db.collection("ads").get({
       success: res => {
         this.setData({
@@ -138,20 +142,24 @@ Page({
     })
   },
 
-  //打开规则提示
-  showRule: function () {
+  //打开城市选择
+  showCity: function () {
     this.setData({
-        isRuleTrue: true
+        isCityTrue: true
     })
-},
-//关闭规则提示
-hideRule: function () {
-  this.setData({
-      isRuleTrue: false
-  })
-},
+  },
+  //关闭城市选择
+  hideCity: function () {
+    this.setData({
+        isCityTrue: false
+    })
+  },
 
- 
-
+  
+  bindtap(e){
+    this.setData({
+      myCity:e.detail.name
+    })
+  },
 })
  

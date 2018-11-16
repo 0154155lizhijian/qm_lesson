@@ -1,44 +1,17 @@
 <link rel="stylesheet" href="../../../images/icon/iconfont.css" />
 <view class="container">
   <view class="search-container">
-    <!--  规则提示  -->
-    <view class="ruleZhezhao {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <!--  选择城市  -->
+    <view class="cityZhezhao {{isCityTrue?'isCityShow':'isCityHide'}}">
         <view class='cityContent'>
-          <view class="nowInCityText">当前定位城市</view>
-          <view class="inCityContent"><view class="inCity">南昌</view></view>
-          <view class="cityTitle">当前选择城市</view>
-          <view class="inCityContent"><view class="inCity">南昌</view></view>
-          <view class="cityTitle">历史浏览城市</view>
-          <view class="inCityContent"><view class="inCity">南昌</view></view>
-          <view class="cityTitle">热门城市</view>
-          <view class="inCityContent"><view class="inCity">全国</view>
-          <view class="inCity">全国</view>
-          <view class="inCity">全国</view>
-          <view class="inCity">全国</view>
-          <view class="inCity">全国</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
-          <view class="cityTitle">A</view>
-          <view class="inCityContent"><view class="inCity">安庆</view></view>
+  <list-html data="{{city}}" binddetail="bindtap" search="{{value}}" myCity="{{myCity}}"></list-html>
         </view>
     </view>
     <!--  end  -->
 
-    <view class="city">
-      <p class="city_curr">南昌</p>
-      <icon type="xialaxuanze-" fontSize="13px" bindtap="{{isRuleTrue?'hideRule':'showRule'}}" />
+    <view class="city" bindtap="{{isCityTrue?'hideCity':'showCity'}}">
+      <view class="city_curr"><text>{{myCity}}</text></view>
+      <view class="down"><icon type="xialaxuanze-" fontSize="12px"  /></view>
     </view>
     <view class="search">
       <van-search placeholder="搜索您要的车" background="none"></van-search>
