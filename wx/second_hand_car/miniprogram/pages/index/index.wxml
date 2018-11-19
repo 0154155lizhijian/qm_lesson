@@ -128,33 +128,33 @@
     </view>
     <view class='strict-select-car-content'>
       <view class='strict-select-car-left' style="background-image:url(../../images/one.jpg);background-size:100% 100%">
-        <div class="strict-select-car-left-choose">
+        <view class="strict-select-car-left-choose">
           <text class="black-font">选你所爱</text>
-        </div>
-        <div class="strict-select-car-left-chooseInfo">
+        </view>
+        <view class="strict-select-car-left-chooseInfo">
           <text class="red-font">3年内准新车</text>
-        </div>
+        </view>
       </view>
       <view class='strict-select-car-right'>
         <view class='strict-select-car-right-one' style="background-image:url(../../images/two.jpg);background-size:100% 100%">
-          <div class="strict-select-car-right-box">
-            <div class="strict-select-car-right-choose">
+          <view class="strict-select-car-right-box">
+            <view class="strict-select-car-right-choose">
               <text class="black-font">入门首选</text>
-            </div>
-            <div class="strict-select-car-right-chooseInfo">
+            </view>
+            <view class="strict-select-car-right-chooseInfo">
               <text class="red-font">5-7万必看</text>
-            </div>
-          </div>
+            </view>
+          </view>
         </view>
         <view class='strict-select-car-right-two' style="background-image:url(../../images/three.jpg);background-size:100% 100%">
-          <div class="strict-select-car-right-box">
-            <div class="strict-select-car-right-choose">
+          <view class="strict-select-car-right-box">
+            <view class="strict-select-car-right-choose">
               <text class="black-font">车美价优</text>
-            </div>
-            <div class="strict-select-car-right-chooseInfo">
+            </view>
+            <view class="strict-select-car-right-chooseInfo">
               <text class="red-font">体验手动乐趣</text>
-            </div>
-          </div>
+            </view>
+          </view>
         </view>
       </view>
     </view>
@@ -168,61 +168,61 @@
     <view class="discovery-content">
       <ul class="discovery-content-items">
         <li>
-          <div class="discovery-content-contain">
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                </div>
-                <div block class="discovery-content-tag">
-                  <div class="discovery-content-tag-text">用车</div>
-                </div>
-              </div>
-              <div class="discovery-content-right">
-                <div class="discovery-content-right-img">
+          <view class="discovery-content-contain">
+            <view class="discovery-content-item">
+              <view class="discovery-content-left">
+                <view class="discovery-content-info">
+                  <view class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</view>
+                </view>
+                <view block class="discovery-content-tag">
+                  <view class="discovery-content-tag-text"><text>用车</text></view>
+                </view>
+              </view>
+              <view class="discovery-content-right">
+                <view class="discovery-content-right-img">
                   <image src="../../images/discovery_one.jpg"></image>
-                </div>
-              </div>
-            </div>
-          </div> 
+                </view>
+              </view>
+            </view>
+          </view> 
         </li>
         <li>
-          <div class="discovery-content-contain">
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                </div>
-                <div block class="discovery-content-tag">
-                  <div class="discovery-content-tag-text">用车</div>
-                </div>
-              </div>
-              <div class="discovery-content-right">
-                <div class="discovery-content-right-img">
+          <view class="discovery-content-contain">
+            <view class="discovery-content-item">
+              <view class="discovery-content-left">
+                <view class="discovery-content-info">
+                  <view class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</view>
+                </view>
+                <view block class="discovery-content-tag">
+                  <view class="discovery-content-tag-text"><text>用车</text></view>
+                </view>
+              </view>
+              <view class="discovery-content-right">
+                <view class="discovery-content-right-img">
                   <image src="../../images/discovery_one.jpg"></image>
-                </div>
-              </div>
-            </div>
-          </div>
+                </view>
+              </view>
+            </view>
+          </view>
         </li>
         <li>
-          <div class="discovery-content-contain">
-            <div class="discovery-content-item">
-              <div class="discovery-content-left">
-                <div class="discovery-content-info">
-                  <div class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</div>
-                </div>
-                <div block class="discovery-content-tag">
-                  <div class="discovery-content-tag-text">用车</div>
-                </div>
-              </div>
-              <div class="discovery-content-right">
-                <div class="discovery-content-right-img">
+          <view class="discovery-content-contain">
+            <view class="discovery-content-item">
+              <view class="discovery-content-left">
+                <view class="discovery-content-info">
+                  <view class="discovery-content-info-text">限速120将成历史，第一条不限速高速来了，长161km</view>
+                </view>
+                <view block class="discovery-content-tag">
+                  <view class="discovery-content-tag-text"><text>用车</text></view>
+                </view>
+              </view>
+              <view class="discovery-content-right">
+                <view class="discovery-content-right-img">
                   <image src="../../images/discovery_one.jpg"></image>
-                </div>
-              </div>
-            </div>
-          </div>
+                </view>
+              </view>
+            </view>
+          </view>
         </li>
       </ul>
     </view>

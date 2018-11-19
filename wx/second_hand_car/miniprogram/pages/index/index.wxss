@@ -504,21 +504,22 @@ img{
     bottom: 0;
 }
 .discovery-content-tag{
-    width: auto;
+    
     height: 33rpx;
-    color: #8F96A0;
+    /* background-color: #EFF2F6; */
     font-size: 25rpx;
     line-height: 33rpx;
 }
 .discovery-content-tag-text{
-    width: auto;
-    height: 33rpx;
-    background-color: #EFF2F6;
-    color: #8F96A0;
-    font-size: 25rpx;
-    line-height: 33rpx;
-    padding-left: 10rpx;
-    padding-right: 10rpx;
+    height: 33rpx;   
+}
+.discovery-content-tag-text text{
+  color: #8F96A0;
+  font-size: 25rpx;
+  line-height: 33rpx;
+  background-color: #EFF2F6;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
 .discovery-content-right{
     width: 240rpx;
