@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="name_list">
+        <!-- 数据展示在js里面，不好维护， 让产品和运营人员，设计师也要能够改代码 -->
+    </ul>
+    <script type="text/html" id="user_tmpl">
+     <% for(var i=0 ;i< users.length;i++) {%>
+        <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+     <% } %>   
+    </script>
+    <script src="./node_modules/lodash/lodash.min.js"></script>
+    <script>
+        const data = {
+            users: [
+                { "name": "Kevin", "url": "http://localhost" },
+                { "name": "Daisy", "url": "http://localhost" },
+                { "name": "Kelly", "url": "http://localhost" },
+            ]
+        }
+//         let users = data.users;
+//         document.getElementById('name_list').innerHTML = users.map(user => `
+//   <li>
+//     <a href="${user.url}">${user.name}</a>
+//   </li>
+// `).join('')
+        const precompile = _.template(document.getElementById('user_tmpl').innerHTML);
+        const html = precompile(data);
+        console.log(html);
+        document.getElementById('name_list').innerHTML = html;
+    </script>
+</body>
+
+</html>

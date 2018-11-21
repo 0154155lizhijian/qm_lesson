@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "0154155lizhijian <1367688918@qq.com> (https://github.com/0154155lizhijian)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {},
+  "description": "- js的运行已经全栈化\r 前端 dom bom +js 无差别对待的core\r 后端 fs http + js core\r node_modules 里的代码在前端照常使用\r 安装的依赖， loadsh 好用的工具库",
+  "keywords": []
+}
