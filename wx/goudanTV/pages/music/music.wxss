@@ -1,0 +1,4 @@
+/* pages/music/music.wxss */
+.a{
+  background-color: red
+}

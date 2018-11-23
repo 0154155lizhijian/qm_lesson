@@ -1,0 +1,16 @@
+<view class="container">
+    <scroll-view class="scroll" scroll-y="true" bindscroll="scroll" style="height:2800rpx;backgroundcolor:red">
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+        <view class="a" style="backgroundcolor:blue;height:200rpx">a</view>
+    </scroll-view>
+</view>
