@@ -10,6 +10,6 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent)
           <div>
             <WrappedComponent {...props} />
           </div>
-          <others />
+          <input />
       )
   }
