@@ -1,0 +1,16 @@
+{
+  "name": "jsonp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "0154155lizhijian <1367688918@qq.com> (https://github.com/0154155lizhijian)",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
+  }
+}
