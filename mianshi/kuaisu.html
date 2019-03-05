@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>快速排序</title>
+</head>
+<body>
+  <script>
+    function quickSort(arr) {
+      if (arr.length < 2) {
+        return arr;
+      }
+      let left = 0;
+      let right = arr.length - 1;
+      while (left < right) {
+        // 基准
+        const p = arr[0];
+        while (arr[right] >= p && left < right) {
+          right --;
+        }
+        while (arr[left] <= p && left < right) {
+          left ++;
+        }
+        if (left === right) {
+          [arr[0], arr[left]] = [arr[left], arr[0]];
+        }
+        [arr[left], arr[right]] = [arr[right], arr[left]]; 
+
+      }
+      // quickSort(arr.slice(0, left))
+      // quickSort(arr.slice(right + 1))
+      return quickSort(arr.slice(0, left))
+      .concat(arr.slice(left, right + 1))
+      .concat(quickSort(arr.slice(right + 1))); // 有序数组
+    }
+  
+    console.log(quickSort([3, 2, 9, 0, 3, 1, 7]));
+  </script>
+</body>
+</html>
