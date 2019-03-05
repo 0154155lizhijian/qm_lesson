@@ -1,0 +1,19 @@
+{
+  "name": "mysql",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sequelize":"node_modules\\.bin\\sequelize"
+
+  },
+  "keywords": [],
+  "author": "0154155lizhijian <1367688918@qq.com> (https://github.com/0154155lizhijian)",
+  "license": "MIT",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}
